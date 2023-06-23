@@ -1,0 +1,314 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.PL\\Task.PL.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\Task.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\Task.BL.csproj",
+        "projectName": "Task.BL",
+        "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\Task.BL.csproj",
+        "packagesPath": "C:\\Users\\Abdullah-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Abdullah-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj"
+              },
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj",
+        "projectName": "Task.CommonDefinitions",
+        "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj",
+        "packagesPath": "C:\\Users\\Abdullah-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Abdullah-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj",
+        "projectName": "Task.DAL",
+        "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj",
+        "packagesPath": "C:\\Users\\Abdullah-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Abdullah-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.PL\\Task.PL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.PL\\Task.PL.csproj",
+        "projectName": "Task.PL",
+        "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.PL\\Task.PL.csproj",
+        "packagesPath": "C:\\Users\\Abdullah-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.PL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Abdullah-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\Task.BL.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.BL\\Task.BL.csproj"
+              },
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.CommonDefinitions\\Task.CommonDefinitions.csproj"
+              },
+              "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj": {
+                "projectPath": "D:\\Projects\\linked Gates Task\\linkedGatesTask\\Task.DAL\\Task.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

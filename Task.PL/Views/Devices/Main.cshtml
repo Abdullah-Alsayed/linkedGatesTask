@@ -1,0 +1,75 @@
+﻿@using Task.CommonDefinitions.DTOs;
+@model List<DeviceDTO>
+@{
+    ViewData["Title"] = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>All Devices</h1>
+ 
+<div class="row justify-content-end">
+    <div class="col-lg-3 d-flex justify-content-end mb-3">
+        <a href="@Url.Action("Create","Devices")" class="btn btn-primary">
+                 Add Device
+          </a>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-3 mb-2">
+                <div class="card">
+                    <img src="/imgs/default.png" class="card-img-top" alt="@item.DeviceName">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.DeviceName</h5>
+                        <h6>@item.DeviceCategoryName</h6>
+                        <ul class="card-text">
+                           @foreach (var Pro in item.DevicePropertiesDTOs)
+                           {
+                              <li>
+                                    @Pro.PropertyName : @Pro.Value 
+                              </li> 
+                           }
+                        </ul>
+                        <p>@item.AcquisitionDate.ToShortDateString()</p>
+                        <a href="@Url.Action("Edit","Devices", new {ID = item.ID})" class="btn btn-outline-success">Edit</a>
+                    </div>
+                </div>
+            </div>
+
+        }
+
+    </div>
+}
+else
+{
+    <h2 class="text-center">
+        No Data Available.
+</h2>
+}
+
+
+<!--Add Devic Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+﻿@using Task.CommonDefinitions.DTOs;
+@model DeviceDTO
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create Device</h1>
+<form class="pt-3" asp-action="Create" asp-controller="Devices" id="Create-Form" method="post">
+    <div class="mb-3 col-lg-6">
+        <label for="DeviceName" class="form-label">Device Name</label>
+        <input type="text" class="form-control" asp-for="DeviceName" placeholder="Device Name">
+        <span class="text-danger field-validation-valid" asp-validation-for="DeviceName"></span>
+
+    </div>
+    <div class="mb-3 col-lg-6">
+        <label for="SerialNo" class="form-label">Serial No</label>
+        <input type="text" class="form-control" asp-for="SerialNo" placeholder="Serial No">
+        <span class="text-danger field-validation-valid" asp-validation-for="SerialNo"></span>
+
+    </div>
+        <div class="mb-3 col-lg-6">
+        <label for="AcquisitionDate" class="form-label">Acquisition Date </label>
+        <input type="date" class="form-control"asp-for="AcquisitionDate" placeholder="Acquisition Date">
+        <span class="text-danger field-validation-valid" asp-validation-for="AcquisitionDate"></span>
+
+    </div>
+    <div class="mb-3 col-lg-6">
+        <label for="Memo" class="form-label">Memo</label>
+        <input type="text" class="form-control" asp-for="Memo" placeholder="Memo">
+        <span class="text-danger field-validation-valid" asp-validation-for="Memo"></span>
+    </div>
+    <div class="mb-3 col-lg-6">
+        <label for="DeviceCategory" class="form-label">Device Category</label>
+        <select asp-for="CategoryID" class="form-control" onchange="CategoryChange()"
+        asp-items="@(new SelectList(ViewBag.DeviceCategory, nameof(CategoryDTO.ID), nameof(CategoryDTO.CategoryName)))">
+                <option value="">--- SELECT ---</option>
+        </select>
+        <span class="text-danger field-validation-valid" asp-validation-for="CategoryID"></span>
+
+    </div>
+    <div class="mb-3">
+        <label for="PropertiesValues" class="form-label">Properties Values</label>
+        <hr />
+        <div class="row">
+            <form id="Props-Form" >
+                @foreach (var Prop in ViewBag.Properties)
+                {
+                    <div class="mb-3 col-lg-6 prop d-none" data-id="Prop_@Prop.CategoryID">
+                        <label for="@Prop.ID" class="form-label">@Prop.Description</label>
+                        <input type="text" class="form-control propValues" placeholder="@Prop.Description">
+                        <input type="hidden" class="form-control propId" value="@Prop.ID">
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+    <button class="btn btn-success mb-3" type="button" onclick="DevicesForm('Devices','Create','Create-Form')" id="BtnSend">
+        Save  
+        <span class="spinner-border Spinner spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+    </button>
+</form>
+
